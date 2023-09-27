@@ -150,7 +150,6 @@ img {
     .cardWrapper {
         display: flex;
         flex-direction: column;
-        margin-bottom: 25px;
     }
 
     .wordContainer {
@@ -191,6 +190,10 @@ img {
 
     .hits {
         column-count: 2;
+    }
+
+    .cardWrapper {
+        width: 1280px;
     }
 
 }

@@ -9,7 +9,7 @@ export const musicData = [
     {id: 8, author: 'Chris Rea', trackName: 'The Road To Hell'},
     {id: 9, author: 'Linkin Park', trackName: 'Numb'},
     {id: 10, author: 'Alphaville', trackName: 'Forever Young'},
-    {id: 11, author: 'Boris Shafutinsky', trackName: 'third of september'},
+    {id: 11, author: 'Boris Shafutinsky', trackName: '3th september'},
     {id: 12, author: 'Metallica', trackName: 'nothing else matter'},
     {id: 13, author: 'Fleetwood Mac', trackName: 'Dreams'},
 ]
