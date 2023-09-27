@@ -10,7 +10,7 @@
     font-weight: 600;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 1000px) {
     .wrapper {
         width: 200px;
     }

@@ -44,8 +44,25 @@ img {
 
 .buttonsBlock {
     display: flex;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     justify-content: space-between;
+}
+
+.textBlock {
+    box-shadow: 0 0 7px 5px #94b4ef;
+    background: #bcd7e2;
+    border-radius: 7px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.textBlock > p {
+    padding: 5px;
+    color: #00010e;
+}
+
+.hits > h2 {
+    font-size: 15px;
 }
 
 .trackBlock {
@@ -93,5 +110,30 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(50px, auto);
+    justify-items: center;
     grid-gap: 20px;
+}
+
+.cardContainer {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/*screen width 1000px*/
+
+@media (min-width: 1000px) {
+
+    .buttonsBlock {
+        justify-content: space-around;
+    }
+    .cardWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: space-between;
+    }
 }
