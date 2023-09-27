@@ -31,16 +31,17 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className={styles.buttonsBlock}>
-                        <Button children="Listen now" width="150px"/>
-                        <Button children="Play me" width="150px"/>
-                    </div>
-
-                    <div className={styles.textBlock}>
-                        <p>
-                            A new music service with official albums, singles, videos, remixes,
-                            live performances and more for Android, iOS and desktop. It's all here.
-                        </p>
+                    <div>
+                        <div className={styles.buttonsBlock}>
+                            <Button children="Listen now" width="150px"/>
+                            <Button children="Play me" width="150px"/>
+                        </div>
+                        <div className={styles.textBlock}>
+                            <p>
+                                A new music service with official albums, singles, videos, remixes,
+                                live performances and more for Android, iOS and desktop. It's all here.
+                            </p>
+                        </div>
                     </div>
 
                     <div className={styles.hits}>
@@ -67,13 +68,13 @@ const Main = () => {
                 </div>
 
                 <div className={styles.cardWrapper}>
-                    <div className={styles.cardContainer}>
+                    <div className={`${styles.cardContainer} ${styles.first}`}>
                         <BottomCard text="Some music" description="Listen now"/>
                         <BottomCard text="Some text" description="text tex"/>
                         <BottomCard text="Music card" description="Right now"/>
                         <BottomCard text="Some music" description="Right now"/>
                     </div>
-                    <div className={styles.cardContainer}>
+                    <div className={`${styles.cardContainer} ${styles.second}`}>
                         <BottomCard text="Some some" description="Play me"/>
                         <BottomCard text="Some music" description="Right now"/>
                         <BottomCard text="Some music" description="Right now"/>

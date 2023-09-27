@@ -49,7 +49,6 @@ img {
 }
 
 .textBlock {
-    box-shadow: 0 0 7px 5px #94b4ef;
     background: #bcd7e2;
     border-radius: 7px;
     max-width: 400px;
@@ -117,6 +116,16 @@ img {
 .cardContainer {
     display: grid;
     grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.first {
+    position: relative;
+    z-index: 10;
+}
+
+.last {
+    position: relative;
 }
 
 /*screen width 1000px*/
@@ -124,7 +133,7 @@ img {
 @media (min-width: 1000px) {
 
     .buttonsBlock {
-        justify-content: space-around;
+        flex-direction: column;
     }
     .cardWrapper {
         display: flex;
@@ -132,8 +141,18 @@ img {
         margin-bottom: 25px;
     }
 
+    .wordContainer {
+        margin-bottom: 30px;
+    }
+
     .cardContainer {
         display: flex;
         justify-content: space-between;
     }
+
+    .cardContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
