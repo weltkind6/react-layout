@@ -3,10 +3,11 @@ import styles from './styles.module.css';
 
 interface ButtonProps {
     children: React.ReactNode;
+    width?: string
 }
-const Button = ({ children }: ButtonProps) => {
+const Button = ({ children, width }: ButtonProps) => {
     return (
-        <button className={styles.button}>{children}</button>
+        <button className={styles.button} style={{width}}>{children}</button>
     );
 };
 

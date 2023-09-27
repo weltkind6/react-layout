@@ -43,11 +43,9 @@ img {
 }
 
 .buttonsBlock {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    align-items: start;
-    width: 200px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
 }
 
 .trackBlock {
@@ -60,19 +58,23 @@ img {
 
 .wordContainer {
     display: flex;
-    align-items: center;
 }
 
 .text {
     display: inline;
     padding: 0 5px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .divider {
     display: inline;
-    height: 15px;
-    border-left: 2px solid #d0d0d0;
+    height: 11px;
+    margin-top: 4px;
+    border-left: 2px solid #00010e;
+}
+
+.textContainer {
+    display: flex;
 }
 
 .title {

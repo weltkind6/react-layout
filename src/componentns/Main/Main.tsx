@@ -5,6 +5,7 @@ import BeatSvg from "../common/BeatSvg";
 import {musicData} from "../../music";
 import Slider from "../common/Slider/Slider";
 import Button from "../common/Button/Button";
+import BottomCard from "../common/BottomCard/BottomCard";
 
 const Main = () => {
     return (
@@ -31,8 +32,8 @@ const Main = () => {
                     </div>
 
                     <div className={styles.buttonsBlock}>
-                        <Button children="Listen now"/>
-                        <Button children="Play me"/>
+                        <Button children="Listen now" width="150px"/>
+                        <Button children="Play me" width="150px"/>
                     </div>
 
                     <div className={styles.textBlock}>
@@ -59,13 +60,12 @@ const Main = () => {
                 <div className={styles.wordContainer}>
                     <span className={styles.text}>Music</span>
                     <span className={styles.divider} />
-                    <span className={styles.text}>Popular music</span>
+                    <div className={styles.textContainer}>
+                        <span className={styles.text}>Popular music</span>
+                        <SoundSvg />
+                    </div>
                 </div>
-
-                <div className={styles.musicElement}>
-                    <div>Top of Music</div>
-                    <div>Listen</div>
-                </div>
+                <BottomCard text="Listen to some music" description="Right now"/>
             </div>
         </div>
     );

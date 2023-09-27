@@ -1,0 +1,11 @@
+.wrapper {
+    background: #adc9f8;
+    border-radius: 12px;
+    width: 200px;
+    padding: 7px;
+    box-shadow: 0 0 7px 5px #94b4ef;
+}
+
+.wrapper > div:first-child {
+    font-weight: 600;
+}
