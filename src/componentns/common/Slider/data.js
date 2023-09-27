@@ -20,7 +20,7 @@ const people = [
     {
         id: 3,
         image:
-            'https://ya.ru/images/search?from=tabbar&img_url=https%3A%2F%2Fsun9-80.userapi.com%2Fimpg%2FA-67fnYJV6d3PHIyJ9C1BR3LLRWzSJ74-wEL8A%2Fj_eMNM8R02c.jpg%3Fsize%3D720x834%26quality%3D95%26sign%3D7492780743590ac4f8a310628eb204d3%26c_uniq_tag%3DGc98XiIhgRIzKjN6UyeFNRHRB0nN7nM_keDzlKrP280%26type%3Dalbum&lr=213&pos=10&rpt=simage&text=metallica',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwePvt1jBLdBtPFqbd4aZFycacQaIDCIFNKQ&usqp=CAU',
         name: 'Metallica',
         title: 'Nothing else matter',
         quote:

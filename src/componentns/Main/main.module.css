@@ -33,6 +33,7 @@ img {
 
 .soundImgBlock {
     display: flex;
+    align-items: center;
 }
 
 .soundIconsBlock {
@@ -70,4 +71,8 @@ img {
     display: inline;
     height: 15px;
     border-left: 2px solid #d0d0d0;
+}
+
+.title {
+    font-size: 15px;
 }

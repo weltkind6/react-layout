@@ -14,14 +14,19 @@ const Main = () => {
                 </div>
                 <Slider />
                 <div className={styles.soundPanel}>
-                       <span>Music is my life</span>
-                       <div className={styles.soundImgBlock}>
-                           <SoundSvg />
-                           <BeatSvg />
-                       </div>
-                    <div className={styles.soundIconsBlock}>
-                        <SoundSvg />
-                        <SoundSvg />
+
+                    <div>
+                        <h2 className={styles.title}>Music is my life</h2>
+                        <div className={styles.soundImgBlock}>
+                            <SoundSvg marginRight="5px"/>
+                            <BeatSvg />
+                            <BeatSvg />
+                            <BeatSvg />
+                        </div>
+                        <div className={styles.soundIconsBlock}>
+                            <SoundSvg />
+                            <SoundSvg />
+                        </div>
                     </div>
 
                     <div className={styles.buttonsBlock}>
