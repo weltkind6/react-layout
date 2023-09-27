@@ -65,7 +65,18 @@ const Main = () => {
                         <SoundSvg />
                     </div>
                 </div>
-                <BottomCard text="Listen to some music" description="Right now"/>
+
+                <div className={styles.cardWrapper}>
+                    <BottomCard text="Some music" description="Listen now"/>
+                    <BottomCard text="Some text" description="text tex"/>
+                    <BottomCard text="Music card" description="Right now"/>
+                    <BottomCard text="Some music" description="Right now"/>
+                    <BottomCard text="Some some" description="Play me"/>
+                    <BottomCard text="Some music" description="Right now"/>
+                    <BottomCard text="Some music" description="Right now"/>
+                    <BottomCard text="Music box music" description="Right now"/>
+                </div>
+
             </div>
         </div>
     );

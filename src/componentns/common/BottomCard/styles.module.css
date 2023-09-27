@@ -1,11 +1,17 @@
 .wrapper {
     background: #adc9f8;
     border-radius: 12px;
-    width: 200px;
+    width: 150px;
     padding: 7px;
     box-shadow: 0 0 7px 5px #94b4ef;
 }
 
 .wrapper > div:first-child {
     font-weight: 600;
+}
+
+@media (min-width: 380px) {
+    .wrapper {
+        width: 200px;
+    }
 }

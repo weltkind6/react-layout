@@ -58,6 +58,13 @@ img {
 
 .wordContainer {
     display: flex;
+    margin: 10px 0;
+    font-weight: 600
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 15px;
 }
 
 .text {
@@ -79,4 +86,12 @@ img {
 
 .title {
     font-size: 15px;
+}
+
+.cardWrapper {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 20px;
 }
