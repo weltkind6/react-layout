@@ -152,11 +152,10 @@ Slider
 }
 .section-center {
     margin: 0 auto;
-    margin-top: 4rem;
     width: 80vw;
     /* have to have a height */
     height: 400px;
-    max-width: 800px;
+    max-width: 550px;
     text-align: center;
     position: relative;
     display: flex;
@@ -249,4 +248,11 @@ article.lastSlide {
 }
 article.nextSlide {
     transform: translateX(100%);
+}
+
+
+@media (min-width: 1000px) {
+    .section-center {
+        margin: 30px;
+    }
 }

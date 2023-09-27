@@ -14,3 +14,10 @@
 .button:hover {
     background: #698fd4;
 }
+
+
+@media (min-width: 1000px) {
+    .button:first-child {
+        margin-bottom: 10px;
+    }
+}
