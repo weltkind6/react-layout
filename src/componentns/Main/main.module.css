@@ -42,9 +42,13 @@ img {
     display: flex;
 }
 
+.soundsContainer > div:first-child {
+    margin-bottom: 10px;
+}
+
 .buttonsBlock {
     display: flex;
-    margin: 10px 0 20px 0;
+    margin: 15px 0 20px 0;
     justify-content: space-between;
 }
 

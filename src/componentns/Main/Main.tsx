@@ -32,7 +32,6 @@ const Main = () => {
                                     <SoundSvg />
                                 </div>
                             </div>
-
                             <div className={styles.textBlock}>
                                     A new music service with official albums, singles, videos, remixes. It's all here.
                             </div>
@@ -53,10 +52,8 @@ const Main = () => {
                                         <span>{author} - {trackName}</span>
                                     </div>
                                 ))}
-
                             </div>
                         </div>
-
 
                     </div>
                 </div>
