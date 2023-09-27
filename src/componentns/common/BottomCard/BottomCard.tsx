@@ -7,18 +7,21 @@ interface CardProps {
 }
 const BottomCard: React.FC<CardProps> = ({text, description}) => {
     const [isHovered, setIsHovered] = useState(true);
-    console.log(isHovered)
+    let timer: NodeJS.Timeout | null = null;
 
     const mouseEventHandler = () => {
-        setTimeout(() => {
-            setIsHovered(false)
-        }, 500)
-    }
+        timer = setTimeout(() => {
+            setIsHovered(false);
+        }, 500);
+    };
+
     const mouseEventHandler2 = () => {
-        setTimeout(() => {
-            setIsHovered(true)
-        }, 500)
-    }
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
+        setIsHovered(true);
+    };
 
     return (
         <div className={styles.wrapper}>

@@ -6,6 +6,7 @@ import {musicData} from "../../music";
 import Slider from "../common/Slider/Slider";
 import Button from "../common/Button/Button";
 import BottomCard from "../common/BottomCard/BottomCard";
+import Card from "../common/Card/Card";
 
 const Main = () => {
     return (
@@ -17,6 +18,7 @@ const Main = () => {
                 <div className={styles.desktopContainer}>
                     <Slider />
                     <div className={styles.soundPanel}>
+                        <Card />
 
                         <div className={styles.soundsContainer}>
                             <div>
