@@ -4,6 +4,7 @@ import SoundSvg from "../common/SoundSvg";
 import BeatSvg from "../common/BeatSvg";
 import {musicData} from "../../music";
 import Slider from "../common/Slider/Slider";
+import Button from "../common/Button/Button";
 
 const Main = () => {
     return (
@@ -24,14 +25,14 @@ const Main = () => {
                             <BeatSvg />
                         </div>
                         <div className={styles.soundIconsBlock}>
-                            <SoundSvg />
+                            <SoundSvg marginRight="5px"/>
                             <SoundSvg />
                         </div>
                     </div>
 
                     <div className={styles.buttonsBlock}>
-                        <button>Listen now</button>
-                        <button>Play me</button>
+                        <Button children="Listen now"/>
+                        <Button children="Play me"/>
                     </div>
 
                     <div className={styles.textBlock}>

@@ -8,7 +8,13 @@ const SoundSvg: React.FC<SoundSvgProps> = ({marginRight}) => {
 
     return (
         <div>
-            <SoundSvgIcon style={{ width: '20px', height: '20px', fill: 'none', marginRight}} />
+            <SoundSvgIcon style={
+                {
+                    width: '20px',
+                    height: '20px',
+                    fill: '#dce9ef',
+                    marginRight}
+            } />
         </div>
     );
 };
