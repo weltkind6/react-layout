@@ -13,6 +13,7 @@ a {
     overflow: hidden;
     background: #dce9ef;
     color: #00010e;
+    min-height: 90vh;
 }
 
 img {
@@ -123,7 +124,6 @@ img {
 .cardContainer {
     display: grid;
     grid-gap: 20px;
-    margin-bottom: 50px;
 }
 
 .first {

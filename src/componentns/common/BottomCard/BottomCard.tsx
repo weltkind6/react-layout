@@ -12,9 +12,10 @@ const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
     console.log('isHovered', isHovered)
 
     const handleMouseEnter = () => {
-        timer = setTimeout(() => {
-            setIsHovered(false);
-        }, 500);
+        // timer = setTimeout(() => {
+        //     setIsHovered(false);
+        // }, 300);
+        setIsHovered(false);
     };
 
     const handleMouseLeave = () => {
@@ -25,10 +26,6 @@ const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
         setIsHovered(true);
     };
 
-    const buttonStyle = {
-        zIndex: isHovered ? 15 : 1,
-    };
-
     return (
         <div className={styles.wrapper}>
             <div className={styles.card}
@@ -37,7 +34,7 @@ const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
                 <div>{text}</div>
                 <div>{description}</div>
             </div>
-            <div className={isHovered ? `${styles.cardHover} ${buttonStyle}` : `${styles.remove}`}>
+            <div className={isHovered ? `${styles.cardHover}` : `${styles.remove}`}>
                 <p style={{padding: "5px"}}>
                     Adjust the margin-top value as needed,
                     Adjust the margin-top value as needed,
