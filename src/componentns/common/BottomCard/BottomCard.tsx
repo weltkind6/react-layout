@@ -23,7 +23,9 @@ const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
             clearTimeout(timer);
             timer = null;
         }
-        setIsHovered(true);
+        setTimeout(() => {
+            setIsHovered(true);
+        }, 500)
     };
 
     return (
