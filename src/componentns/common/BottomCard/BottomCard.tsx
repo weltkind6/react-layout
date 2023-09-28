@@ -35,7 +35,7 @@ const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
                 <div>{description}</div>
             </div>
             <div className={isHovered ? `${styles.cardHover}` : `${styles.remove}`}>
-                <p style={{padding: "5px"}}>
+                <p className={styles.text}>
                     Adjust the margin-top value as needed,
                     Adjust the margin-top value as needed,
                     Adjust the margin-top value as needed

@@ -19,7 +19,7 @@
     opacity: 0;
     position: absolute;
     border-radius: 15px;
-    top: 33%;
+    top: 70%;
 }
 
 
@@ -41,6 +41,10 @@
 
 .remove {
     display: none;
+}
+
+.text {
+    padding: 25px;
 }
 
 
