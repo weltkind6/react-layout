@@ -12,10 +12,10 @@ const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
     console.log('isHovered', isHovered)
 
     const handleMouseEnter = () => {
-        // timer = setTimeout(() => {
-        //     setIsHovered(false);
-        // }, 300);
-        setIsHovered(false);
+        timer = setTimeout(() => {
+            setIsHovered(false);
+        }, 300);
+
     };
 
     const handleMouseLeave = () => {
