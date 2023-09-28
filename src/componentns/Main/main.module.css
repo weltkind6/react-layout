@@ -71,7 +71,11 @@ img {
     display: flex;
 }
 
-.trackBlock > span {
+.trackBlock1 {
+    display: flex;
+}
+
+.trackBlock > span, .trackBlock1 > span {
     margin-left: 5px;
 }
 
@@ -124,11 +128,14 @@ img {
 
 .first {
     position: relative;
-    z-index: 10;
 }
 
 .last {
     position: relative;
+}
+
+.verticalLine {
+    display: none;
 }
 
 /*screen width 1000px*/
@@ -196,8 +203,12 @@ img {
         column-count: 2;
     }
 
-    .cardWrapper {
-        width: 1280px;
+    .musicTitle {
+        text-align: center;
+    }
+
+    .trackBlock {
+        border-right: 1px solid #00010e;
     }
 
 }

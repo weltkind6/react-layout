@@ -2,11 +2,10 @@ import React from 'react';
 import styles from './main.module.css'
 import SoundSvg from "../common/SoundSvg";
 import BeatSvg from "../common/BeatSvg";
-import {musicData} from "../../music";
+import {musicData, musicData2} from "../../music";
 import Slider from "../common/Slider/Slider";
 import Button from "../common/Button/Button";
 import BottomCard from "../common/BottomCard/BottomCard";
-import Card from "../common/Card/Card";
 
 const Main = () => {
     return (
@@ -18,8 +17,6 @@ const Main = () => {
                 <div className={styles.desktopContainer}>
                     <Slider />
                     <div className={styles.soundPanel}>
-                        <Card />
-
                         <div className={styles.soundsContainer}>
                             <div>
                                 <h2 className={styles.title}>Music is my life</h2>
@@ -54,6 +51,12 @@ const Main = () => {
                                         <span>{author} - {trackName}</span>
                                     </div>
                                 ))}
+                                {musicData2.map(({id, author, trackName}) => (
+                                    <div key={id} className={styles.trackBlock1}>
+                                        <SoundSvg />
+                                        <span>{author} - {trackName}</span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
@@ -70,16 +73,16 @@ const Main = () => {
                 </div>
 
                 <div className={styles.cardWrapper}>
-                    <div className={`${styles.cardContainer} ${styles.first}`}>
-                        <BottomCard text="Some music" description="Listen now"/>
+                    <div className={`${styles.cardContainer} `}>
+                        <BottomCard text="Some music" description="Listen now" />
                         <BottomCard text="Some text" description="text tex"/>
-                        <BottomCard text="Music card" description="Right now"/>
+                        <BottomCard text="Music card" description="Right now" />
                         <BottomCard text="Some music" description="Right now"/>
                     </div>
                     <div className={`${styles.cardContainer} ${styles.second}`}>
-                        <BottomCard text="Some some" description="Play me"/>
-                        <BottomCard text="Some music" description="Right now"/>
-                        <BottomCard text="Some music" description="Right now"/>
+                        <BottomCard text="Some some" description="Play me" />
+                        <BottomCard text="Some music" description="Right now" />
+                        <BottomCard text="Some music" description="Right now" />
                         <BottomCard text="Music box music" description="Right now"/>
                     </div>
                 </div>

@@ -3,19 +3,21 @@ import styles from './styles.module.css';
 
 interface CardProps {
     text: string,
-    description: string
+    description: string,
+    zIndex?: string
 }
-const BottomCard: React.FC<CardProps> = ({text, description}) => {
+const BottomCard: React.FC<CardProps> = ({text, description, zIndex}) => {
     const [isHovered, setIsHovered] = useState(true);
     let timer: NodeJS.Timeout | null = null;
+    console.log('isHovered', isHovered)
 
-    const mouseEventHandler = () => {
+    const handleMouseEnter = () => {
         timer = setTimeout(() => {
             setIsHovered(false);
         }, 500);
     };
 
-    const mouseEventHandler2 = () => {
+    const handleMouseLeave = () => {
         if (timer) {
             clearTimeout(timer);
             timer = null;
@@ -23,20 +25,26 @@ const BottomCard: React.FC<CardProps> = ({text, description}) => {
         setIsHovered(true);
     };
 
+    const buttonStyle = {
+        zIndex: isHovered ? 15 : 1,
+    };
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.card}
-                 onMouseLeave={mouseEventHandler}
-                 onMouseEnter={mouseEventHandler2}>
+                 onMouseLeave={handleMouseEnter}
+                 onMouseEnter={handleMouseLeave}>
                 <div>{text}</div>
                 <div>{description}</div>
             </div>
-            <div className={isHovered ? `${styles.cardHover}`: `${styles.remove}`}>
-                Adjust the margin-top value as needed,
-                Adjust the margin-top value as needed,
-                Adjust the margin-top value as needed
-                Adjust the margin-top value as needed
-                Adjust the margin-top value as needed
+            <div className={isHovered ? `${styles.cardHover} ${buttonStyle}` : `${styles.remove}`}>
+                <p style={{padding: "5px"}}>
+                    Adjust the margin-top value as needed,
+                    Adjust the margin-top value as needed,
+                    Adjust the margin-top value as needed
+                    Adjust the margin-top value as needed
+                    Adjust the margin-top value as needed
+                </p>
             </div>
         </div>
     );
